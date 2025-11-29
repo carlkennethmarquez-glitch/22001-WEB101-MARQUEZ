@@ -1,8 +1,151 @@
-<html>
-  <head>
-    <title>My First Web Page</title>
-  </head>
-  <body>
-    <h1>Hi my name is Carl Kenneth Marquez</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our IT Group</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f8ff;
+    }
+
+    .buttons {
+      margin: 20px;
+    }
+
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background-color: coral;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .member-container {
+      display: none; /* hidden by default */
+      border: 2px solid #000;
+      padding: 20px;
+      margin: 20px auto;
+      width: 60%;
+      background-color: aqua;
+      border-radius: 10px;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+    }
+
+    hr {
+      margin: 15px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 style="color: coral;">Our IT Group</h1>
+  <p>Click a button to view member details:</p>
+
+  <!-- Buttons -->
+  <div class="buttons">
+    <button onclick="showMember('tricia')">Leader: Tricia</button>
+    <button onclick="showMember('carl')">Member 1: Carl Kenneth</button>
+    <button onclick="showMember('eric')">Member 2: Ericxander</button>
+    <button onclick="showMember('louie')">Member 3: Carl Louie</button>
+    <button onclick="showMember('stanley')">Member 4: Stanley</button>
+  </div>
+
+  <!-- Member Profiles -->
+
+  <!-- Tricia -->
+  <div id="tricia" class="member-container">
+    <img src="c:\Users\marquez\Downloads\e63be23c-3564-4f4a-a759-94cc9087f51a.jpg" alt="Tricia Profile Picture">
+    <h1 style="font-style: oblique; color: coral;">Nuevo, Tricia</h1>
+    <p style="color: coral; font-size: medium; font-style: oblique;">
+      I am a hardworking BSIT student committed to learning and personal growth. I focus on applying knowledge in practical ways and strive to become a well-rounded IT professional.
+    </p>
+    <h2 style="font-style: oblique; color: coral;">Leader</h2>
+    <hr>
+    <h3 style="color: crimson; font-style: oblique;">About Me</h3>
+    <h4>Age: 24</h4>
+    <h5>Email: tricianuevo1102@gmail.com</h5>
+    <h6>Contact No.: 09558715468</h6>
+  </div>
+
+  <!-- Carl -->
+  <div id="carl" class="member-container">
+    <img src="c:\Users\marquez\Downloads\b7485eed-27f6-4933-b86a-12022c91c3bd.jpg" alt="Carl Profile Picture">
+    <h1 style="font-style: oblique; color: rgb(77, 11, 107);">Marquez, Carl Kenneth S.</h1>
+    <p style="color: rgb(175, 12, 180); font-size: medium; font-style: oblique;">
+      I am a 2nd-year IT student skilled in time management and completing tasks efficiently. I am proficient in Excel and Word and always eager to improve my IT skills.
+    </p>
+    <h2 style="font-style: oblique;">Member 1</h2>
+    <hr>
+    <h3 style="color: crimson; font-style: oblique;">About Me</h3>
+    <h4>Age: 19</h4>
+    <h5>Email: carlkennethmarquez@gmail.com</h5>
+    <h6>Contact No.: 09702159433</h6>
+  </div>
+
+  <!-- Eric -->
+  <div id="eric" class="member-container">
+    <img src="c:\Users\marquez\Downloads\8b78d41e-6c67-462c-94d0-326b04b2938d.jpg" alt="Eric Profile Picture">
+    <h1 style="font-style: oblique; color: rgb(109, 18, 212);">Mortel, Ericxander C.</h1>
+    <p style="color: rgb(51, 12, 160); font-size: medium; font-style: oblique;">
+      Passionate about learning new technologies, exploring programming languages, and enhancing IT skills.
+    </p>
+    <h2 style="font-style: oblique;">Member 2</h2>
+    <hr>
+    <h3 style="color: rgb(60, 11, 151); font-style: oblique;">About Me</h3>
+    <h4>Age: 21</h4>
+    <h5>Email: mortelericxander02@gmail.com</h5>
+    <h6>Contact No.: 09945441427</h6>
+  </div>
+
+  <!-- Louie -->
+  <div id="louie" class="member-container">
+    <img src="c:\Users\marquez\Downloads\f9216005-f942-49c4-a51a-46a9001603ea.jpg" alt="Louie Profile Picture">
+    <h1 style="font-style: oblique; color: rgb(40, 116, 5);">Balleras, Carl Louie B.</h1>
+    <p style="color: rgb(18, 138, 7); font-size: medium; font-style: oblique;">
+      Dedicated IT student focused on expanding technical knowledge and applying practical skills in real-world scenarios.
+    </p>
+    <h2 style="font-style: oblique;">Member 3</h2>
+    <hr>
+    <h3 style="color: rgb(4, 92, 30); font-style: oblique;">About Me</h3>
+    <h4>Age: 20</h4>
+    <h5>Email: carllouieballeras05@gmail.com</h5>
+    <h6>Contact No.: 09813864314</h6>
+  </div>
+
+  <!-- Stanley -->
+  <div id="stanley" class="member-container">
+    <img src="c:\Users\marquez\Downloads\816e6462-a101-4a3b-8465-093b9705dcfd.jpg" alt="Stanley Profile Picture">
+    <h1 style="font-style: oblique; color: rgb(175, 13, 13);">Balbon, Stanley A.</h1>
+    <p style="color: rgb(44, 3, 3); font-size: medium; font-style: oblique;">
+      BSIT student with strong interest in programming, software, and systems. Focused on expanding technical knowledge and IT skills.
+    </p>
+    <h2 style="font-style: oblique;">Member 4</h2>
+    <hr>
+    <h3 style="color: rgb(126, 8, 14); font-style: oblique;">About Me</h3>
+    <h4>Age: 23</h4>
+    <h5>Email: balbonstanley@gmail.com</h5>
+    <h6>Contact No.: 09814414030</h6>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    function showMember(memberId) {
+      const members = document.querySelectorAll('.member-container');
+      members.forEach(m => m.style.display = 'none'); // hide all
+      document.getElementById(memberId).style.display = 'block'; // show selected
+    }
+  </script>
+
+</body>
 </html>
